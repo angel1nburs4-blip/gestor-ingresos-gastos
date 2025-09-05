@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<cruduno>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.controlgastos.DemoApplication",
+            "projectName": "cruduno",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
