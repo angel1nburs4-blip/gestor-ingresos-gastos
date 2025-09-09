@@ -1,0 +1,93 @@
+/* ==========================================================================
+   🌐 Tailwind Directives — Base, Components, Utilities
+   ========================================================================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   🧩 Component Layer — Estilos personalizados reutilizables
+   ========================================================================== */
+@layer components {
+
+    /* 🔐 Login Container — Pantalla de autenticación */
+    .bgContainerLoginRegister {
+        @apply bg-primary min-h-screen flex flex-col items-center justify-center gap-4;
+    }
+
+    /* 🧭 Navigation Bar — Menú principal de navegación */
+    .bar {
+        @apply bg-primary text-textInverse p-7 shadow-md;
+    }
+
+    /* 🎯 Botones genéricos — Usados en formularios y navegación */
+    button {
+        @apply bg-primary text-textInverse rounded-md hover:bg-primaryLight block mx-auto px-4 py-2 w-full;
+    }
+
+    /* 📝 Inputs — Campos de texto en formularios */
+    input {
+        @apply bg-surface w-full rounded-md p-3 text-text border-divider;
+    }
+
+    /* 📋 Formulario base — Usado en login, ingresos, gastos */
+    form {
+        @apply max-w-md mx-auto mt-10 p-6 bg-surface rounded-2xl shadow-lg space-y-4 border-divider;
+    }
+
+    /* 🧾 Encabezado de formulario */
+    .h2 {
+        @apply text-2xl font-bold text-center;
+    }
+
+    /* 📊 Tabla base — Visualización de gastos e ingresos */
+    table {
+        @apply mx-auto mt-10 p-6 bg-surface rounded-2xl shadow-lg space-y-4 border-divider;
+    }
+
+    /* 🧠 Encabezado de tabla */
+    thead {
+        @apply bg-primaryLight text-textInverse p-7 shadow-md;
+    }
+
+    /* 📌 Celdas de contenido — Gastos */
+    .tdConcepto {
+        @apply px-16 py-2 text-left max-w-md;
+    }
+
+    .tdMonto {
+        @apply px-12 py-2 text-left max-w-md;
+    }
+
+    .tdFecha {
+        @apply px-10 py-2 text-left max-w-md;
+    }
+
+    /* 📌 Encabezados de columna — Gastos */
+    .thConcepto {
+        @apply px-16 py-2 text-center max-w-md;
+    }
+
+    .thMonto {
+        @apply px-12 py-2 text-center max-w-md;
+    }
+
+    .thFecha {
+        @apply px-10 py-2 text-center max-w-md;
+    }
+
+    /* 💰 Capital actual — Visualización del saldo */
+    .capitalActual {
+        @apply max-w-md mx-auto mt-10 p-6 bg-surface rounded-2xl shadow-lg space-y-4;
+    }
+
+    /* ✅ Texto positivo — Capital disponible */
+    .textOK {
+        @apply text-2xl font-bold text-center text-secondary;
+    }
+
+    /* ⏳ Texto de espera — Cargando o sin datos */
+    .textWait {
+        @apply text-2xl font-bold text-center text-textMuted;
+    }
+}
